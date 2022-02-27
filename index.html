@@ -1,17 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bilžu ievietošana</title>
+    <meta charset="utf-8">
     <link href="style.css" rel="stylesheet" />
-    <title>RVT</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
-    <!-- <h6><u><big>hhh</big>kas tas ir</u>Sveiki kolēģi!</h6> -->
-    <h1> <strike><u>Fontu formatēšana</u></strike></h1>
+    <div class="wrapper">
+        <!-- 
+         ievietojiet arch_face attēlu šeit. Tam vajadzētu aizņemt 90% no skata loga,
+         neatkarīgi no izvēlētā attēla. Attēli ir:
+         images/arch_face1000.jpg, images/arch_face600.jpg un
+         images/arch_face300.jpg. Skaitlis faila nosaukumā norāda
+         attēla platums pikseļos. Noklusējuma attēlam ir jābūt images/arch_face600.jpg
+      -->
+        <img src="images/arch_face600.jpg" sizes="90vw" srcset="images/arch_face1000.jpg 1000w,
+          images/arch_face600.jpg 600w,
+          images/arch_face300.jpg 300w" alt="Ķieģeļi arkā ar akmens tēlu - bārdainu vīrieti, kurš skatās uz augšu">
+
+
+
+        <h1>Bildes no Beļģijas</h1>
+
+        <h5>
+            Tuvplāns pulksteņa augšpusē Mont des Arts (Kunstberg) Briselē, Beļģijā.
+        </h5>
+
+        <!--
+        ieliec šeit pulksteņa attēlu.
+       Ja logs ir mazāks par 500 pikseļiem, parādīt images/clock300.jpg
+       Ja logs ir 500 līdz 800 pikseļi, parādīt images/clock500.jpg
+       pretējā gadījumā parādīt images/clock800.jpg
+       Izmantojamais noklusējuma attēls ir images/clock500.jpg
+       Skaitlis faila nosaukumā norāda attēla platumu pikseļos.
+    -->
+        <img src="images/clock500.jpg" sizes="(max-width: 500px) 300px,
+        (max-width:800px) 500px,
+        800px" srcset="images/clock300.jpg 300w,
+        images/clock500.jpg 500w,
+        images/clock800.jpg 800w" alt="sudraba skulptūra ar vīrieti cilindrā ar spieķi, kas stāv blakus zvanam">
+    </div>
+
 </body>
 
 </html>

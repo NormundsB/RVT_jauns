@@ -1,4 +1,13 @@
-h6 {
-    font-size: 45px;
+h1, h5{
+    
     font-family: Arial, Helvetica, sans-serif;
+    
+}
+h1 {
+    font-size: 45px;
+    color:brown
+}
+.wrapper {
+    border-image: auto;
+    text-align: center;
 }
